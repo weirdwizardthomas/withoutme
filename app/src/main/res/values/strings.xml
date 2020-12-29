@@ -1,6 +1,9 @@
 <resources>
-    <string name="app_name">WithoutMe</string>
+    <string name="app_name">Without Me</string>
     <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
+    <string name="title_my_list">My wishlist</string>
     <string name="title_notifications">Notifications</string>
+    <string name="hint_wish_name">Name</string>
+    <string name="hint_wish_description">Description</string>
+    <string name="title_createwish">Add a new wish</string>
 </resources>

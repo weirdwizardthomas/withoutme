@@ -77,10 +77,8 @@ public class SignInActivity extends AppCompatActivity {
         // [START auth_fui_signout]
         AuthUI.getInstance()
                 .signOut(this)
-                .addOnCompleteListener(new OnCompleteListener<Void>() {
-                    public void onComplete(@NonNull Task<Void> task) {
-                        // ...
-                    }
+                .addOnCompleteListener(task -> {
+                    // ...
                 });
         // [END auth_fui_signout]
     }

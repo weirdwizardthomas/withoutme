@@ -12,14 +12,28 @@
         tools:layout="@layout/fragment_home" />
 
     <fragment
-        android:id="@+id/navigation_dashboard"
-        android:name="com.weirdwizardtom.withoutme.ui.dashboard.DashboardFragment"
-        android:label="@string/title_dashboard"
-        tools:layout="@layout/fragment_dashboard" />
+        android:id="@+id/navigation_mywishlist"
+        android:name="com.weirdwizardtom.withoutme.ui.mywishlist.MyWishlistFragment"
+        android:label="@string/title_my_list"
+        tools:layout="@layout/fragment_my_wishlist">
+        <action
+            android:id="@+id/mywishlist_to_createwish_action"
+            app:destination="@id/navigation_createwish" />
+    </fragment>
 
     <fragment
         android:id="@+id/navigation_notifications"
         android:name="com.weirdwizardtom.withoutme.ui.notifications.NotificationsFragment"
         android:label="@string/title_notifications"
         tools:layout="@layout/fragment_notifications" />
+    <fragment
+        android:id="@+id/navigation_createwish"
+        android:name="com.weirdwizardtom.withoutme.ui.createwish.CreateWishFragment"
+        android:label="@string/title_createwish"
+        tools:layout="@layout/create_wish_fragment" />
+    <activity
+        android:id="@+id/signInActivity"
+        android:name="com.weirdwizardtom.withoutme.SignInActivity"
+        android:label="activity_firebase_ui"
+        tools:layout="@layout/activity_firebase_ui" />
 </navigation>
